@@ -1,0 +1,32 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+#color{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.bg-start{
+    background-color: grey;
+}
+
+.animate{
+    animation: colorear 8s;
+}
+
+.bgIMG{
+
+}
+
+@keyframes colorear {
+    from{
+        background-color: violet;
+    }
+    to{
+        background-image: linear-gradient(to bottom left, violet, pink, cyan, blue )
+    }
+}
