@@ -1,3 +1,4 @@
+var isVisible = true;
 $(document).ready( function(){
     var nombre = "Rafael"
     prueba1(nombre);
@@ -18,4 +19,15 @@ $("#rojo").click( function(){
 });
 $("#animation").click( function(){
     $("#color").removeClass("bg-start").addClass("animate");
+});
+
+$("#toggle").click( function(){
+    if(isVisible){
+        $("#color").hide();
+        isVisible = false;
+    }
+    else{
+        $("#color").show();
+        isVisible = true;
+    }
 });
